@@ -23,7 +23,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm build
         run: |
-          npm run build --prefix ./lab7/task1 --if-present
+          cd ./lab7/task1
+          npm ci
+          npm run build --if-present
+          npm test
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
