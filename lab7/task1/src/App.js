@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React Task 1 v.2
+          Let me raise a tost...
         </a>
       </header>
     </div>
